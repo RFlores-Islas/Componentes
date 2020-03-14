@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    Intro
+    </title>
+    </head>
+    <link rel="stylesheet" href="css/Estilos_boton.css" media="all">
+    <body>
+    <form id="form">
+        <input type="email" placeholder="Correo" name="mails[]">
+    </form>
+               <br>
+                
+                <button id="btn" type="button" class ="botonC" >CREAR</button>
+                
+         <script>
+             $("#btn").addEventListener("click",function(){
+        var input = document.createElement("input");
+                
+                 input.setAttribute("type","email");
+                 input.setAttribute("placeholder","Correo");
+                 input.setAttribute("name","mails        []");
+                  $("#form").appendChild(input);
+             })
+             function $(selector){
+                 return document.querySelector(selector);
+             }
+        </script>
+    </body>
+
+
+
+</html>

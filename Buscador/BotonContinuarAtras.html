@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Eventos en botones
+    </title>
+    </head>
+    <script type="text/javascript">
+    function Continuar(){
+        document.getElementById("caja").style.display="block"
+    }
+         function Atras(){
+        document.getElementById("caja").style.display="none"
+    }
+        function Continuar_Atras(){
+            var caja = document.getElementById("caja");
+            if(caja.style.display =="none"){
+                Continuar();
+                document.getElementById("boton").value="Atras";
+            }
+            else{
+                Atras();
+                document.getElementById("boton").value="Continuar";
+            }
+        }
+    </script>
+    <body>
+ <input type="submit" id = "boton" value="Atras" onclick="Continuar_Atras()">
+        <section id = "caja" style="width: 300px; height: 200px; background: green;" >
+        </section><br>
+       
+    </body>
+
+    
+
+
+</html>

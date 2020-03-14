@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boton remover</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            td:last-child{background-color: #F00;color:#FFF;cursor: pointer;
+                          font-weight: bold;text-decoration: underline}
+        </style>
+    </head>
+    <body>
+        
+        <table id="table" border="1">
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+                <th>Borrar</th>
+            </tr>
+            
+            <tr>
+                <td>Rafael</td>
+                <td>Flores</td>
+                <td>27</td>
+                <td>Eliminar Registro</td>
+            </tr>
+            
+            <tr>
+                <td>Daniela</td>
+                <td>Castillo</td>
+                <td>25</td>
+                <td>Eliminar Registro</td>
+            </tr>
+        </table>
+        
+        <script>
+    
+            var index, table = document.getElementById('table');
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                table.rows[i].cells[3].onclick = function()
+                {
+                    var c = confirm("El registro se borrara");
+                    if(c === true)
+                    {
+                        index = this.parentElement.rowIndex;
+                        table.deleteRow(index);
+                    }
+                    
+                   
+                };
+                
+            }
+    
+        </script>
+        
+    </body>
+</html>

@@ -1,0 +1,132 @@
+.botonG{
+    background-color: #31BFE7;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+    padding: 10px 10px;
+    width: 150px;
+    border: 2px solid #175FEA;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    webkit-transition-duration: 0.5s;
+    box-shadow: 0px 5px 4px 5px #B3B8C2;
+}
+
+.botonG:hover{
+    background-color: aliceblue;
+    color: black;
+}
+.botonE{
+    background-color: #71DE61;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    width: 200px;
+    border: 2px solid #175FEA;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    webkit-transition-duration: 0.5s;
+    box-shadow: 0px 5px 4px 5px #B3B8C2;
+}
+
+.botonE:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.botonEL{
+    background-color: #EE454D;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    width: 200px;
+    border: 2px solid #175FEA;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    webkit-transition-duration: 0.5s;
+    box-shadow: 0px 5px 4px 5px #B3B8C2;
+}
+
+.botonEL:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.botonC{
+    background-color: #EE9945;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    width: 200px;
+    border: 2px solid #175FEA;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    webkit-transition-duration: 0.5s;
+    box-shadow: 0px 5px 4px 5px #B3B8C2;
+}
+
+.botonC:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.botonA{
+    background-color: #31BFE7;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    width: 200px;
+    border: 2px solid #175FEA;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    webkit-transition-duration: 0.5s;
+    box-shadow: 0px 5px 4px 5px #B3B8C2;
+}
+
+.botonA:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+
+.botonCON{
+    background-color: #31BFE7;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    width: 200px;
+    border: 2px solid #175FEA;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    webkit-transition-duration: 0.5s;
+    box-shadow: 0px 5px 4px 5px #B3B8C2;
+}
+
+.botonCON:hover{
+    background-color: aliceblue;
+    color: black;
+}
+
+.botonCAN{
+    background-color: #31BFE7;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    padding: 20px 10px;
+    width: 200px;
+    border: 2px solid #175FEA;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    webkit-transition-duration: 0.5s;
+    box-shadow: 0px 5px 4px 5px #B3B8C2;
+}
+
+.botonCAN:hover{
+    background-color: aliceblue;
+    color: black;
+}

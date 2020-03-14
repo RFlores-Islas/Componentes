@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Boton Editar</title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <style>
+            table tr:not(:first-child){
+                cursor: pointer;transition: all .25s ease-in-out;
+            }
+            table tr:not(:first-child):hover{background-color: #ddd;}
+        </style>
+               <link rel="stylesheet" href="css/Estilos_boton.css" media="all">
+    </head>
+    <body>
+        Nombre:<input type="text" name="tnombre" id="tnombre"><br><br>
+        Apellido:<input type="text" name="tapellido" id="tapellido"><br><br>
+        Edad:<input type="text" name="edad" id="edad"><br><br>
+             <button type="button" class ="botonE" 
+             onclick="editRow();">EDITAR</button>
+<br><br>
+        
+        <table id="table" border="1">
+            
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+            
+            <tr>
+                <td>Rafael</td>
+                <td>Flores</td>
+                <td>27</td>
+            </tr>
+        
+         </table>
+        <script> 
+            
+            var table = document.getElementById("table"),rIndex;
+            
+            for(var i = 1; i < table.rows.length; i++)
+            {
+                table.rows[i].onclick = function()
+                {
+                    rIndex = this.rowIndex;
+                    console.log(rIndex);
+                    
+                    document.getElementById("tnombre").value = this.cells[0].innerHTML;
+                    document.getElementById("tapellido").value = this.cells[1].innerHTML;
+                    document.getElementById("edad").value = this.cells[2].innerHTML;
+                };
+            }
+            
+            
+           // edit the row
+            function editRow()
+            {
+                table.rows[rIndex].cells[0].innerHTML = document.getElementById("tnombre").value;
+                table.rows[rIndex].cells[1].innerHTML = document.getElementById("tapellido").value;
+                table.rows[rIndex].cells[2].innerHTML = document.getElementById("edad").value;
+            }
+            
+        </script>    
+    </body>
+</html>

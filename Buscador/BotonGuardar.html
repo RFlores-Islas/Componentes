@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>
+    Botones
+    </title>
+       <link rel="stylesheet" href="css/Estilos_boton.css" media="all">
+    <script type="text/javascript">
+	function obtenerdatos()
+	{
+		var nombre = document.getElementById('nombre').value;
+		var costo = parseFloat(document.getElementById('costo').value);
+
+		document.registro.nombreobtenido.value = nombre;
+		document.registro.costoobtenido.value = costo;
+
+	}
+</script>
+    </head>
+    <body>
+        <form name="registro">
+      
+        
+    
+         <fieldset>
+        <legend>Costos</legend>
+    <tr>
+        <br>
+	<td> Caracter: </td><td><input type="text" name="nombre" id="nombre" ></td>
+</tr>	<br>
+<tr>
+    <br>
+	<td>Costos:</td><td><input type="text" name="costo" id="costo" ></td>
+</tr>
+<tr>
+</tr><br><br>
+             <button type="button" class="botonG" onclick="obtenerdatos()">GUARDAR</button>
+        </fieldset>
+        <br>
+        <table border="1">
+<tr>
+	<td>Caracter:</td><td><input type="text" name="nombreobtenido" id="nombreobtenido" ></td>
+</tr>	
+<tr>
+	<td>Costos:</td><td><input type="text" name="costoobtenido" id="costoobtenido" ></td>
+</tr>
+        </table>
+        </form>
+    </body>
+
+    
+
+
+
+</html>
